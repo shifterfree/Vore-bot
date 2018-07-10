@@ -18,7 +18,7 @@ bot.on('ready', function (evt) {
 bot.on('message', function (user, userID, channelID, message, evt) {
     // Our bot needs to know if it will execute a command
     // It will listen for messages that will start with `vore`
-    if (message.substring(0, 12) == 'vore') {
+    if (message.substring(0, 4) == 'vore') {
         var args = message.substring(0).split(' ');
         var cmd = args[0];
        
